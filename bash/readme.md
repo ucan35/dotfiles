@@ -4,4 +4,5 @@
 | ------ | ------ |
 | .bashrc | ~ |
 | .bash_aliases | ~ |
+| environment | /etc |
 
