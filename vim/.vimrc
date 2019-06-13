@@ -6,3 +6,6 @@ set t_Co=256
 set number relativenumber
 
 syntax on
+
+" use clipboard
+set clipboard=unnamedplus
