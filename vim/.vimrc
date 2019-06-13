@@ -2,5 +2,7 @@
 set background=dark
 set t_Co=256
 
-set relativenumber
+" use hybrid line numbers
+set number relativenumber
+
 syntax on
