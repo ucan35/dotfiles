@@ -9,3 +9,6 @@ syntax on
 
 " use clipboard
 set clipboard=unnamedplus
+
+" see https://security.stackexchange.com/questions/36001/vim-modeline-vulnerabilities
+set nomodeline
