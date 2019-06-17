@@ -6,6 +6,7 @@ set t_Co=256
 set number relativenumber
 
 syntax on
+set path=$PWD/**
 
 " use clipboard
 set clipboard=unnamedplus
