@@ -7,6 +7,7 @@ alias grep='grep --color=auto'
 alias tmux='tmux -2'
 alias ..='cd ..'
 alias go_temp='cd $(mktemp -d)'
+alias sc='systemctl'
 
 # https://github.com/haikarainen/light
 l () {
