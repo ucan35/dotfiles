@@ -4,6 +4,7 @@ set t_Co=256
 
 syntax on
 set path=$PWD/**
+set hlsearch
 
 " use hybrid line numbers
 set number relativenumber
