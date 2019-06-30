@@ -2,7 +2,6 @@
 set background=dark
 set t_Co=256
 
-syntax on
 set path=$PWD/**
 set hlsearch
 
@@ -14,6 +13,10 @@ set clipboard=unnamedplus
 
 " see https://security.stackexchange.com/questions/36001/vim-modeline-vulnerabilities
 set nomodeline
+
+" https://github.com/sickill/vim-monokai
+syntax enable
+colorscheme monokai
 
 " https://github.com/scrooloose/nerdtree
 packadd nerdtree
