@@ -19,6 +19,10 @@ set nomodeline
 syntax enable
 colorscheme monokai
 
+" persistent undo
+set undofile
+set undodir=~/.vim/undodir
+
 " https://github.com/scrooloose/nerdtree
 packadd nerdtree
 nnoremap <silent> <F3> :NERDTreeToggle<CR>
