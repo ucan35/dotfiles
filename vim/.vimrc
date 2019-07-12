@@ -5,6 +5,7 @@ set t_Co=256
 set path=$PWD/**
 set hlsearch
 set cursorline
+set scrolloff=3
 
 " use hybrid line numbers
 set number relativenumber
