@@ -9,6 +9,13 @@ PS1='[\u@\h \W]\$ '
 # Update the values of LINES and COLUMNS.
 shopt -s checkwinsize
 
+# bash history configurations
+HISTSIZE=-1
+HISTFILESIZE=-1
+HISTCONTROL=ignoredups
+
+export EDITOR=vim
+
 # gnu global with pygments, https://www.gnu.org/software/global/, http://pygments.org/
 export GTAGSCONF=/usr/local/share/gtags/gtags.conf
 export GTAGSLABEL=pygments
