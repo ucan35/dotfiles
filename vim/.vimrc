@@ -7,6 +7,10 @@ set hlsearch
 set cursorline
 set scrolloff=3
 
+" make search case insensitive unless pattern contains an uppercase letter
+set ignorecase
+set smartcase
+
 " use hybrid line numbers
 set number relativenumber
 
