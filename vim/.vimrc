@@ -6,6 +6,7 @@ set path=$PWD/**
 set hlsearch
 set cursorline
 set scrolloff=3
+set shortmess=filnxtToO " was filnxtToOS, dropped S to enable search match index
 
 " make search case insensitive unless pattern contains an uppercase letter
 set ignorecase
