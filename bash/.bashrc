@@ -16,7 +16,8 @@ HISTCONTROL=ignoredups
 
 export EDITOR=vim
 
-# gnu global with pygments, https://www.gnu.org/software/global/, http://pygments.org/
+# gnu global with pygments (and universal-ctags), https://www.gnu.org/software/global/, http://pygments.org/
+# https://github.com/universal-ctags/ctags
 export GTAGSCONF=/usr/local/share/gtags/gtags.conf
 export GTAGSLABEL=pygments
 
