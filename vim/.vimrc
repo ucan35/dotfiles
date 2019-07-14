@@ -33,6 +33,12 @@ set undodir=~/.vim/undodir
 packadd nerdtree
 nnoremap <silent> <F3> :NERDTreeToggle<CR>
 
+" https://github.com/ctrlpvim/ctrlp.vim
+packadd ctrlp.vim
+
+" start with filename only search mode
+let g:ctrlp_by_filename = 1
+
 " https://github.com/ludovicchabant/vim-gutentags
 " https://github.com/skywind3000/gutentags_plus
 " https://www.gnu.org/software/global
