@@ -1,5 +1,5 @@
 # Vim files
 
-| File | Directory |
+| File | Path |
 | ------ | ------ |
-| .vimrc | ~ |
+| vimrc | ~/.vimrc |

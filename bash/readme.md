@@ -1,7 +1,7 @@
 # Bash files
 
-| File | Directory |
+| File | Path |
 | ------ | ------ |
-| .bashrc | ~ |
-| .bash_aliases | ~ |
+| bashrc | ~/.bashrc |
+| bash_aliases | ~/.bash_aliases |
 

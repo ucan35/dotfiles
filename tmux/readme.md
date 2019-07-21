@@ -1,6 +1,6 @@
 # Tmux files
 https://github.com/tmux/tmux
 
-| File | Directory |
+| File | Path |
 | ------ | ------ |
-| .tmux.conf | ~ |
+| tmux.conf | ~/.tmux.conf |
