@@ -29,6 +29,9 @@ colorscheme monokai
 set undofile
 set undodir=~/.vim/undodir
 
+" enable mouse
+set mouse=a
+
 " https://github.com/scrooloose/nerdtree
 packadd nerdtree
 nnoremap <silent> <F3> :NERDTreeToggle<CR>
