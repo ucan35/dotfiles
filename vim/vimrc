@@ -21,9 +21,9 @@ set clipboard=unnamedplus
 " see https://security.stackexchange.com/questions/36001/vim-modeline-vulnerabilities
 set nomodeline
 
-" https://github.com/sickill/vim-monokai
+" https://github.com/lifepillar/vim-solarized8
 syntax enable
-colorscheme monokai
+colorscheme solarized8_high
 
 " persistent undo
 set undofile
