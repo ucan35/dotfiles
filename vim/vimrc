@@ -42,6 +42,9 @@ nnoremap <silent> <F2> :GFiles<CR>
 
 let g:fzf_layout = { 'down': '25%' }
 
+" https://github.com/tpope/vim-fugitive
+packadd vim-fugitive
+
 " https://github.com/ludovicchabant/vim-gutentags
 " https://github.com/skywind3000/gutentags_plus
 " https://www.gnu.org/software/global
