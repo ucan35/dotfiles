@@ -36,11 +36,11 @@ set mouse=a
 packadd nerdtree
 nnoremap <silent> <F3> :NERDTreeToggle<CR>
 
-" https://github.com/ctrlpvim/ctrlp.vim
-packadd ctrlp.vim
+" https://github.com/junegunn/fzf.vim
+packadd fzf.vim
+nnoremap <silent> <F2> :GFiles<CR>
 
-" start with filename only search mode
-let g:ctrlp_by_filename = 1
+let g:fzf_layout = { 'down': '25%' }
 
 " https://github.com/ludovicchabant/vim-gutentags
 " https://github.com/skywind3000/gutentags_plus
