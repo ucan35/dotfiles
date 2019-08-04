@@ -45,6 +45,12 @@ nnoremap <silent> {A-Down} :TmuxNavigateDown<cr>
 nnoremap <silent> {A-Up} :TmuxNavigateUp<cr>
 nnoremap <silent> {A-Right} :TmuxNavigateRight<cr>
 
+" https://github.com/tpope/vim-sleuth
+packadd vim-sleuth
+set tabstop=4
+set shiftwidth=4
+set expandtab
+
 " https://github.com/scrooloose/nerdtree
 packadd nerdtree
 nnoremap <silent> <F3> :NERDTreeToggle<CR>
