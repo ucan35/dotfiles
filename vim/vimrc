@@ -1,45 +1,33 @@
-" enable 256 color support inside tmux
-set background=dark
-set t_Co=256
-
 set path=$PWD/**
 set hlsearch
 set cursorline
 set scrolloff=3
 set shortmess=filnxtToO " was filnxtToOS, dropped S to enable search match index
+set number relativenumber " use hybrid line numbers
+set clipboard=unnamedplus " use clipboard
+set nomodeline " see https://security.stackexchange.com/questions/36001/vim-modeline-vulnerabilities
+set mouse=a " enable mouse
+
+" enable 256 color support inside tmux
+set background=dark
+set t_Co=256
 
 " make search case insensitive unless pattern contains an uppercase letter
 set ignorecase
 set smartcase
 
-" use hybrid line numbers
-set number relativenumber
-
-" use clipboard
-set clipboard=unnamedplus
-
-" see https://security.stackexchange.com/questions/36001/vim-modeline-vulnerabilities
-set nomodeline
+" persistent undo
+set undofile
+set undodir=~/.vim/undodir
 
 " https://github.com/lifepillar/vim-solarized8
 syntax enable
 colorscheme solarized8_high
 
-" persistent undo
-set undofile
-set undodir=~/.vim/undodir
-
-" enable mouse
-set mouse=a
-
 " https://github.com/christoomey/vim-tmux-navigator
 packadd vim-tmux-navigator
-
-" disable tmux navigator when zooming the Vim pane
-let g:tmux_navigator_disable_when_zoomed = 1
-" custom mappings
-let g:tmux_navigator_no_mappings = 1
-
+let g:tmux_navigator_disable_when_zoomed = 1 " disable tmux navigator when zooming the Vim pane
+let g:tmux_navigator_no_mappings = 1 " custom mappings
 nnoremap <silent> {A-Left} :TmuxNavigateLeft<cr>
 nnoremap <silent> {A-Down} :TmuxNavigateDown<cr>
 nnoremap <silent> {A-Up} :TmuxNavigateUp<cr>
@@ -69,7 +57,6 @@ packadd vim-fugitive
 " https://www.gnu.org/software/global
 packadd vim-gutentags
 packadd gutentags_plus
-
 let g:gutentags_modules = ['gtags_cscope']
 let g:gutentags_project_root = ['.git']
 let g:gutentags_cache_dir = expand('~/.cache/tags')
