@@ -4,6 +4,7 @@ alias nano='vim'
 # common
 alias ll='ls -l --color=auto'
 alias grep='grep --color=auto'
+alias diff='diff --color=auto'
 alias ..='cd ..'
 alias go_temp='cd $(mktemp -d)'
 alias sc='systemctl'
