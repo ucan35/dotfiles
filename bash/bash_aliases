@@ -9,6 +9,12 @@ alias ..='cd ..'
 alias go_temp='cd $(mktemp -d)'
 alias sc='systemctl'
 
+# lgrep - less'd grep
+GREP='/usr/bin/rg'
+lgrep () {
+  command $GREP $@ --color=always | less -R
+}
+
 # https://github.com/haikarainen/light
 l () {
   if [ -z "$1" ]; then
