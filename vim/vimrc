@@ -49,6 +49,9 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 
+" https://github.com/thaerkh/vim-indentguides
+packadd vim-indentguides
+
 " https://github.com/scrooloose/nerdtree
 packadd nerdtree
 nnoremap <silent> <F3> :NERDTreeToggle<CR>
