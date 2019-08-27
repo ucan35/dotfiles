@@ -20,6 +20,13 @@ set smartcase
 set undofile
 set undodir=~/.vim/undodir
 
+" custom keybindings
+nnoremap <C-Up> <C-y>
+nnoremap <C-Down> <C-e>
+
+inoremap <C-Up> <C-x><C-y>
+inoremap <C-Down> <C-x><C-e>
+
 " https://github.com/lifepillar/vim-solarized8
 syntax enable
 colorscheme solarized8_high
