@@ -1,6 +1,6 @@
 # Tlp files
 https://linrunner.de/en/tlp/tlp.html
 
-| File | Directory |
+| File | Path |
 | ------ | ------ |
-| tlp | /etc/default |
+| tlp | /etc/default/tlp |
