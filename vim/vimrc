@@ -20,6 +20,9 @@ set smartcase
 set undofile
 set undodir=~/.vim/undodir
 
+" disable goddamn `Ex` mode
+nnoremap Q <Nop>
+
 " custom keybindings
 nnoremap <C-Up> <C-y>
 nnoremap <C-Down> <C-e>
