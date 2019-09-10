@@ -54,6 +54,7 @@ set expandtab
 
 " https://github.com/thaerkh/vim-indentguides
 packadd vim-indentguides
+let g:indentguides_ignorelist = ['text', 'json']
 
 " https://github.com/scrooloose/nerdtree
 packadd nerdtree
