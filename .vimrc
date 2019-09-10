@@ -32,6 +32,14 @@ nnoremap <C-Down> <C-e>
 inoremap <C-Up> <C-x><C-y>
 inoremap <C-Down> <C-x><C-e>
 
+" move line(s) up and down, see https://vim.fandom.com/wiki/Moving_lines_up_or_down
+nnoremap <silent> <C-S-Up> :m .-2<CR>==
+nnoremap <silent> <C-S-Down> :m .+1<CR>==
+inoremap <silent> <C-S-Up> <Esc>:m .-2<CR>==gi
+inoremap <silent> <C-S-Down> <Esc>:m .+1<CR>==gi
+vnoremap <silent> <C-S-Up> :m '<-2<CR>gv=gv
+vnoremap <silent> <C-S-Down> :m '>+1<CR>gv=gv
+
 " https://github.com/lifepillar/vim-solarized8
 syntax enable
 colorscheme solarized8_high
