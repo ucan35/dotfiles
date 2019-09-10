@@ -7,6 +7,7 @@ set number relativenumber " use hybrid line numbers
 set clipboard=unnamedplus " use clipboard
 set nomodeline " see https://security.stackexchange.com/questions/36001/vim-modeline-vulnerabilities
 set mouse=a " enable mouse
+set hidden " enable hidden buffers in background
 set list " show hidden characters
 
 " enable 256 color support inside tmux
