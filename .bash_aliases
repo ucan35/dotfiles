@@ -8,6 +8,7 @@ alias diff='diff --color=auto'
 alias ..='cd ..'
 alias go_temp='cd $(mktemp -d)'
 alias sc='systemctl'
+alias vim='vim -b' # launch vim in binary mode in order to make CR appear as ^M
 
 # lgrep - less'd grep
 GREP='/usr/bin/rg'
