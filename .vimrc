@@ -56,6 +56,10 @@ nnoremap <silent> {A-Down} :TmuxNavigateDown<cr>
 nnoremap <silent> {A-Up} :TmuxNavigateUp<cr>
 nnoremap <silent> {A-Right} :TmuxNavigateRight<cr>
 
+" make splits gain focus on below/right side, as tmux does
+set splitbelow
+set splitright
+
 " https://github.com/tpope/vim-sleuth
 packadd vim-sleuth
 set tabstop=4
