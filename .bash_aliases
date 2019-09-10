@@ -2,7 +2,7 @@
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 # common
-alias ll='ls -l --color=auto'
+alias ll='ls -lv --color=auto'
 alias grep='grep --color=auto'
 alias diff='diff --color=auto'
 alias ..='cd ..'
