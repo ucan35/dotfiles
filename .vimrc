@@ -77,7 +77,6 @@ nnoremap <silent> <F3> :NERDTreeToggle<CR>
 " https://github.com/junegunn/fzf.vim
 packadd fzf.vim
 nnoremap <silent> <C-p> :GFiles<CR>
-nnoremap <silent> <C-S-p> :Files<CR>
 
 let g:fzf_layout = { 'down': '25%' }
 
