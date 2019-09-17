@@ -60,6 +60,13 @@ nnoremap <silent> {A-Right} :TmuxNavigateRight<cr>
 set splitbelow
 set splitright
 
+packadd lightline.vim
+set laststatus=2 " show statusline
+set noshowmode " hide unnecessary -- INSERT -- block
+let g:lightline = {
+    \ 'colorscheme': 'wombat'
+\}
+
 " https://github.com/tpope/vim-sleuth
 packadd vim-sleuth
 set tabstop=4

@@ -31,3 +31,6 @@
 [submodule ".vim/after/syntax/c-syntax.vim"]
 	path = .vim/after/syntax/c-syntax.vim
 	url = https://github.com/agfline/c-syntax.vim.git
+[submodule ".vim/pack/plugins/opt/lightline.vim"]
+	path = .vim/pack/plugins/opt/lightline.vim
+	url = https://github.com/itchyny/lightline.vim.git
