@@ -42,6 +42,7 @@ vnoremap <silent> <C-S-Down> :m '>+1<CR>gv=gv
 
 " https://github.com/lifepillar/vim-solarized8
 syntax enable
+set termguicolors
 colorscheme solarized8_high
 
 " https://github.com/tpope/vim-obsession
