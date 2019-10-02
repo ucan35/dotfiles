@@ -40,10 +40,12 @@ inoremap <silent> <C-S-Down> <Esc>:m .+1<CR>==gi
 vnoremap <silent> <C-S-Up> :m '<-2<CR>gv=gv
 vnoremap <silent> <C-S-Down> :m '>+1<CR>gv=gv
 
-" https://github.com/lifepillar/vim-solarized8
+" https://github.com/gruvbox-community/gruvbox
 syntax enable
 set termguicolors
-colorscheme solarized8_high
+let g:gruvbox_invert_selection = 0
+let g:gruvbox_italic = 1
+colorscheme gruvbox
 
 " https://github.com/tpope/vim-obsession
 packadd vim-obsession

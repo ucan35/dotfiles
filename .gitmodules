@@ -34,3 +34,6 @@
 [submodule ".vim/pack/plugins/opt/lightline.vim"]
 	path = .vim/pack/plugins/opt/lightline.vim
 	url = https://github.com/itchyny/lightline.vim.git
+[submodule ".vim/pack/plugins/opt/gruvbox"]
+	path = .vim/pack/plugins/opt/gruvbox
+	url = https://github.com/gruvbox-community/gruvbox
