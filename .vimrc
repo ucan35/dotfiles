@@ -80,6 +80,11 @@ set expandtab
 packadd vim-indentguides
 let g:indentguides_ignorelist = ['text', 'json']
 
+packadd vim-matchup
+let g:matchup_matchparen_deferred = 1
+let g:matchup_matchparen_hi_surround_always = 1
+let g:matchup_matchparen_timeout = 50
+
 " https://github.com/scrooloose/nerdtree
 packadd nerdtree
 nnoremap <silent> <F3> :NERDTreeToggle<CR>
