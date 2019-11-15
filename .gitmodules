@@ -1,42 +1,30 @@
-[submodule ".vim/pack/plugins/opt/fzf.vim"]
-	path = .vim/pack/plugins/opt/fzf.vim
-	url = https://github.com/junegunn/fzf.vim.git
-[submodule ".vim/pack/plugins/opt/gutentags_plus"]
-	path = .vim/pack/plugins/opt/gutentags_plus
-	url = https://github.com/skywind3000/gutentags_plus.git
-[submodule ".vim/pack/plugins/opt/nerdtree"]
-	path = .vim/pack/plugins/opt/nerdtree
-	url = https://github.com/scrooloose/nerdtree.git
-[submodule ".vim/pack/plugins/opt/vim-fugitive"]
-	path = .vim/pack/plugins/opt/vim-fugitive
-	url = https://github.com/tpope/vim-fugitive.git
-[submodule ".vim/pack/plugins/opt/vim-gutentags"]
-	path = .vim/pack/plugins/opt/vim-gutentags
-	url = https://github.com/ludovicchabant/vim-gutentags.git
-[submodule ".vim/pack/plugins/opt/vim-indentguides"]
-	path = .vim/pack/plugins/opt/vim-indentguides
-	url = https://github.com/thaerkh/vim-indentguides.git
-[submodule ".vim/pack/plugins/opt/vim-obsession"]
-	path = .vim/pack/plugins/opt/vim-obsession
-	url = https://github.com/tpope/vim-obsession.git
-[submodule ".vim/pack/plugins/opt/vim-sleuth"]
-	path = .vim/pack/plugins/opt/vim-sleuth
-	url = https://github.com/tpope/vim-sleuth.git
-[submodule ".vim/pack/plugins/opt/vim-solarized8"]
-	path = .vim/pack/plugins/opt/vim-solarized8
-	url = https://github.com/lifepillar/vim-solarized8.git
-[submodule ".vim/pack/plugins/opt/vim-tmux-navigator"]
-	path = .vim/pack/plugins/opt/vim-tmux-navigator
-	url = https://github.com/christoomey/vim-tmux-navigator.git
-[submodule ".vim/after/syntax/c-syntax.vim"]
-	path = .vim/after/syntax/c-syntax.vim
+[submodule ".config/nvim/after/syntax/c-syntax.vim"]
+	path = .config/nvim/after/syntax/c-syntax.vim
 	url = https://github.com/agfline/c-syntax.vim.git
-[submodule ".vim/pack/plugins/opt/lightline.vim"]
-	path = .vim/pack/plugins/opt/lightline.vim
-	url = https://github.com/itchyny/lightline.vim.git
-[submodule ".vim/pack/plugins/opt/vim-matchup"]
-	path = .vim/pack/plugins/opt/vim-matchup
-	url = https://github.com/andymass/vim-matchup
-[submodule ".vim/pack/plugins/opt/gruvbox"]
-	path = .vim/pack/plugins/opt/gruvbox
+[submodule ".config/nvim/pack/plugin/opt/fzf.vim"]
+	path = .config/nvim/pack/plugin/opt/fzf.vim
+	url = https://github.com/junegunn/fzf.vim.git
+[submodule ".config/nvim/pack/plugin/opt/gruvbox"]
+	path = .config/nvim/pack/plugin/opt/gruvbox
 	url = https://github.com/gruvbox-community/gruvbox
+[submodule ".config/nvim/pack/plugin/opt/indentLine"]
+	path = .config/nvim/pack/plugin/opt/indentLine
+	url = https://github.com/Yggdroot/indentLine.git
+[submodule ".config/nvim/pack/plugin/opt/lightline.vim"]
+	path = .config/nvim/pack/plugin/opt/lightline.vim
+	url = https://github.com/itchyny/lightline.vim.git
+[submodule ".config/nvim/pack/plugin/opt/nerdtree"]
+	path = .config/nvim/pack/plugin/opt/nerdtree
+	url = https://github.com/scrooloose/nerdtree.git
+[submodule ".config/nvim/pack/plugin/opt/vim-fugitive"]
+	path = .config/nvim/pack/plugin/opt/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive.git
+[submodule ".config/nvim/pack/plugin/opt/vim-matchup"]
+	path = .config/nvim/pack/plugin/opt/vim-matchup
+	url = https://github.com/andymass/vim-matchup.git
+[submodule ".config/nvim/pack/plugin/opt/vim-sleuth"]
+	path = .config/nvim/pack/plugin/opt/vim-sleuth
+	url = https://github.com/tpope/vim-sleuth.git
+[submodule ".config/nvim/pack/plugin/opt/vim-tmux-navigator"]
+	path = .config/nvim/pack/plugin/opt/vim-tmux-navigator
+	url = https://github.com/christoomey/vim-tmux-navigator

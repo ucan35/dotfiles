@@ -4,40 +4,18 @@ My configuration files.
 
 ## Getting Started
 
-This repository is a bare git repository. The technique used can be found [here](https://www.atlassian.com/git/tutorials/dotfiles).
+This repository is a ~~bare~~ _yadm_ git repository. See <https://yadm.io/>.
+
+I used to manage bare repository by myself, but then i accidentally ran `git clean -fdx` and i went mad.  
+The technique that was used before can be found [here](https://www.atlassian.com/git/tutorials/dotfiles).
 
 ### Prerequisites
 
-Git.
+Yadm and/or git.
 
 ### Installing
 
-Clone repository.
-```
-git clone --bare https://github.com/ucan35/dotfiles.git $HOME/.dotfiles 
-```
-
-Checkout files.
-```
-git --git-dir=$HOME/.dotfiles --work-tree=$HOME checkout
-```
-
-Initialize and update submodules.
-```
-git --git-dir=$HOME/.dotfiles --work-tree=$HOME submodule init
-git --git-dir=$HOME/.dotfiles --work-tree=$HOME submodule update
-```
-
-Optionally delete `README.md` file.
-
-That's it.
-
-## TODOS
-
-Currently, the configuration files that are outside of home directory are tracked with copies of them under `.dotfiles/root` directory.
-They can be managed with symbolic links but that is too error prone. 
-
-I plan to change this in future. A solution could be mounting `.dotfiles/root` directory as an overlayfs.
+See yadm manual, or clone this repository straight with git. That's it.
 
 ## Acknowledgments
 

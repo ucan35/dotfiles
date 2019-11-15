@@ -21,24 +21,25 @@
       <property name="Print" type="empty"/>
     </property>
     <property name="custom" type="empty">
-      <property name="&lt;Primary&gt;&lt;Alt&gt;Delete" type="string" value="xflock4"/>
       <property name="&lt;Alt&gt;F3" type="empty">
         <property name="startup-notify" type="bool" value="true"/>
       </property>
+      <property name="&lt;Super&gt;p" type="string" value="xfce4-display-settings --minimal"/>
+      <property name="override" type="bool" value="true"/>
       <property name="&lt;Alt&gt;F2" type="empty">
         <property name="startup-notify" type="bool" value="true"/>
       </property>
-      <property name="XF86Mail" type="string" value="exo-open --launch MailReader"/>
-      <property name="XF86WWW" type="string" value="exo-open --launch WebBrowser"/>
-      <property name="override" type="bool" value="true"/>
-      <property name="&lt;Primary&gt;Escape" type="string" value="xfce4-popup-whiskermenu"/>
+      <property name="Print" type="string" value="xfce4-screenshooter --fullscreen"/>
+      <property name="&lt;Shift&gt;Print" type="string" value="xfce4-screenshooter --region"/>
+      <property name="&lt;Super&gt;Return" type="string" value="xfce4-terminal --command &apos;tmux -f .config/tmux/main.conf&apos;"/>
+      <property name="&lt;Super&gt;l" type="string" value="dm-tool switch-to-greeter"/>
+      <property name="&lt;Primary&gt;Escape" type="string" value="xfce4-appfinder">
+        <property name="startup-notify" type="bool" value="true"/>
+      </property>
+      <property name="&lt;Super&gt;9" type="string" value="pactl set-sink-volume 0 -5%"/>
+      <property name="&lt;Super&gt;0" type="string" value="pactl set-sink-volume 0 +5%"/>
+      <property name="&lt;Super&gt;minus" type="string" value="pactl set-sink-mute 0 toggle"/>
       <property name="&lt;Super&gt;e" type="string" value="thunar"/>
-      <property name="&lt;Super&gt;0" type="string" value="amixer set &apos;Master&apos; 3%+"/>
-      <property name="&lt;Super&gt;9" type="string" value="amixer set &apos;Master&apos; 3%-"/>
-      <property name="&lt;Super&gt;minus" type="string" value="amixer set &apos;Master&apos; toggle"/>
-      <property name="&lt;Super&gt;Return" type="string" value="xfce4-terminal --command=tmux"/>
-      <property name="&lt;Primary&gt;&lt;Shift&gt;Escape" type="string" value="xfce4-terminal --command=top"/>
-      <property name="&lt;Primary&gt;KP_Enter" type="string" value="xfce4-terminal --command=tmux"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">
@@ -109,6 +110,7 @@
       <property name="&lt;Alt&gt;F7" type="string" value="move_window_key"/>
       <property name="Up" type="string" value="up_key"/>
       <property name="&lt;Alt&gt;F11" type="string" value="fullscreen_key"/>
+      <property name="&lt;Alt&gt;space" type="string" value="popup_menu_key"/>
       <property name="&lt;Alt&gt;&lt;Shift&gt;Tab" type="string" value="cycle_reverse_windows_key"/>
       <property name="Escape" type="string" value="cancel_key"/>
       <property name="&lt;Alt&gt;F12" type="string" value="above_key"/>
@@ -117,22 +119,22 @@
       <property name="&lt;Alt&gt;F9" type="string" value="hide_window_key"/>
       <property name="Left" type="string" value="left_key"/>
       <property name="override" type="bool" value="true"/>
-      <property name="&lt;Shift&gt;&lt;Super&gt;exclam" type="string" value="move_window_workspace_1_key"/>
-      <property name="&lt;Shift&gt;&lt;Super&gt;at" type="string" value="move_window_workspace_2_key"/>
-      <property name="&lt;Shift&gt;&lt;Super&gt;numbersign" type="string" value="move_window_workspace_3_key"/>
-      <property name="&lt;Shift&gt;&lt;Super&gt;Up" type="string" value="tile_up_key"/>
-      <property name="&lt;Shift&gt;&lt;Super&gt;Down" type="string" value="tile_down_key"/>
-      <property name="&lt;Shift&gt;&lt;Super&gt;Left" type="string" value="tile_left_key"/>
-      <property name="&lt;Shift&gt;&lt;Super&gt;Right" type="string" value="tile_right_key"/>
-      <property name="&lt;Super&gt;1" type="string" value="workspace_1_key"/>
-      <property name="&lt;Super&gt;2" type="string" value="workspace_2_key"/>
-      <property name="&lt;Super&gt;3" type="string" value="workspace_3_key"/>
       <property name="&lt;Super&gt;4" type="string" value="workspace_4_key"/>
+      <property name="&lt;Super&gt;3" type="string" value="workspace_3_key"/>
+      <property name="&lt;Super&gt;2" type="string" value="workspace_2_key"/>
+      <property name="&lt;Super&gt;1" type="string" value="workspace_1_key"/>
+      <property name="&lt;Shift&gt;&lt;Super&gt;Right" type="string" value="tile_right_key"/>
+      <property name="&lt;Shift&gt;&lt;Super&gt;Left" type="string" value="tile_left_key"/>
+      <property name="&lt;Shift&gt;&lt;Super&gt;Down" type="string" value="tile_down_key"/>
+      <property name="&lt;Shift&gt;&lt;Super&gt;Up" type="string" value="tile_up_key"/>
       <property name="&lt;Shift&gt;&lt;Super&gt;dollar" type="string" value="move_window_workspace_4_key"/>
+      <property name="&lt;Shift&gt;&lt;Super&gt;numbersign" type="string" value="move_window_workspace_3_key"/>
+      <property name="&lt;Shift&gt;&lt;Super&gt;at" type="string" value="move_window_workspace_2_key"/>
+      <property name="&lt;Shift&gt;&lt;Super&gt;exclam" type="string" value="move_window_workspace_1_key"/>
     </property>
   </property>
   <property name="providers" type="array">
-    <value type="string" value="commands"/>
     <value type="string" value="xfwm4"/>
+    <value type="string" value="commands"/>
   </property>
 </channel>
