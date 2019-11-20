@@ -10,6 +10,7 @@ set nomodeline " see https://security.stackexchange.com/questions/36001/vim-mode
 set mouse=a " enable mouse
 set hidden " enable hidden buffers in background
 set list " show hidden characters
+set listchars=tab:>\ ,trail:-,nbsp:+,extends:>,precedes:<
 set nowrap " dont wrap by default
 
 " enable 256 color support inside tmux
