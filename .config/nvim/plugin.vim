@@ -56,9 +56,9 @@ packadd vim-fugitive
 " https://github.com/ludovicchabant/vim-gutentags
 " https://github.com/skywind3000/gutentags_plus
 " https://www.gnu.org/software/global
-"packadd vim-gutentags
-"packadd gutentags_plus
-"let g:gutentags_modules = ['gtags_cscope']
-"let g:gutentags_project_root = ['.git']
-"let g:gutentags_cache_dir = expand('~/.cache/tags')
-"let g:gutentags_plus_switch = 1
+packadd vim-gutentags
+packadd gutentags_plus
+let g:gutentags_modules = ['gtags_cscope']
+let g:gutentags_project_root = ['.git']
+let g:gutentags_cache_dir = expand('~/.cache/tags')
+let g:gutentags_plus_switch = 1

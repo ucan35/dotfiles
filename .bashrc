@@ -22,7 +22,7 @@ source /usr/share/fzf/completion.bash
 
 # gnu global with pygments (and universal-ctags), https://www.gnu.org/software/global/, http://pygments.org/
 # https://github.com/universal-ctags/ctags
-#export GTAGSCONF=/usr/local/share/gtags/gtags.conf
-#export GTAGSLABEL=pygments
+export GTAGSCONF=/usr/share/gtags/gtags.conf
+export GTAGSLABEL=pygments
 
 [[ -f ~/.bash_aliases ]] && . ~/.bash_aliases
