@@ -7,6 +7,11 @@ let g:gruvbox_invert_selection = 0
 let g:gruvbox_italic = 1
 colorscheme gruvbox
 
+" https://github.com/PeterRincker/vim-searchlight.git
+packadd vim-searchlight
+nnoremap <silent> * *:1Searchlight<cr>
+nnoremap <silent> # #:1Searchlight<cr>
+
 " https://github.com/christoomey/vim-tmux-navigator
 packadd vim-tmux-navigator
 let g:tmux_navigator_disable_when_zoomed = 1 " disable tmux navigator when zooming the Vim pane

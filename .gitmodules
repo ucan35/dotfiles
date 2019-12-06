@@ -28,3 +28,6 @@
 [submodule ".config/nvim/pack/plugin/opt/vim-tmux-navigator"]
 	path = .config/nvim/pack/plugin/opt/vim-tmux-navigator
 	url = https://github.com/christoomey/vim-tmux-navigator
+[submodule ".config/nvim/pack/plugin/opt/vim-searchlight"]
+	path = .config/nvim/pack/plugin/opt/vim-searchlight
+	url = https://github.com/PeterRincker/vim-searchlight.git
