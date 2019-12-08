@@ -2,6 +2,7 @@
 alias ll='ls -lv --color=auto'
 alias grep='grep --color=auto'
 alias diff='diff --color=auto'
+alias cd..='cd ..'
 alias ..='cd ..'
 alias go_temp='cd $(mktemp -d)'
 alias sc='systemctl'
