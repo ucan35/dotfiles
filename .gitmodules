@@ -31,3 +31,9 @@
 [submodule ".config/nvim/pack/plugin/opt/vim-searchlight"]
 	path = .config/nvim/pack/plugin/opt/vim-searchlight
 	url = https://github.com/PeterRincker/vim-searchlight.git
+[submodule ".config/nvim/pack/plugin/opt/vim-gutentags"]
+	path = .config/nvim/pack/plugin/opt/vim-gutentags
+	url = https://github.com/ludovicchabant/vim-gutentags
+[submodule ".config/nvim/pack/plugin/opt/gutentags_plus"]
+	path = .config/nvim/pack/plugin/opt/gutentags_plus
+	url = https://github.com/skywind3000/gutentags_plus
