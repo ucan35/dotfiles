@@ -53,8 +53,11 @@ nnoremap <silent> <F3> :NERDTreeToggle<CR>
 " https://github.com/junegunn/fzf.vim
 packadd fzf.vim
 nnoremap <silent> <C-p> :GFiles<CR>
-
 let g:fzf_layout = { 'down': '25%' }
+
+" https://github.com/majutsushi/tagbar
+packadd tagbar
+nnoremap <F4> :TagbarToggle<CR>
 
 " https://github.com/tpope/vim-fugitive
 packadd vim-fugitive
