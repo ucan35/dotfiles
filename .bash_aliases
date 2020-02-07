@@ -5,8 +5,10 @@ alias diff='diff --color=auto'
 alias cd..='cd ..'
 alias ..='cd ..'
 alias go_temp='cd $(mktemp -d)'
-alias sc='systemctl'
+alias sc='sudo systemctl'
 alias vim='nvim -b' # launch neovim in binary mode in order to make CR appear as ^M
+alias ssh='TERM=xterm ssh'
+alias rg='rg --no-heading'
 
 # https://github.com/haikarainen/light
 l () {
