@@ -11,7 +11,7 @@ set mouse=a " enable mouse
 set hidden " enable hidden buffers in background
 set list " show hidden characters
 set listchars=tab:>\ ,trail:-,nbsp:+,extends:>,precedes:<
-set nowrap " dont wrap by default
+set updatetime=750
 
 " enable 256 color support inside tmux
 set background=dark

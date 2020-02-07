@@ -37,6 +37,7 @@ set expandtab
 
 " https://github.com/Yggdroot/indentLine.git
 packadd indentLine
+let g:indentLine_fileTypeExclude = ['json']
 let g:indentLine_char = '┊'
 
 " https://github.com/andymass/vim-matchup.git
