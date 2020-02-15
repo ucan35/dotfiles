@@ -1,6 +1,5 @@
 set path=$PWD/**
 set hlsearch
-set cursorline " default in neovim
 set scrolloff=3
 " already set to `filnxtToOF` in neovim
 "set shortmess=filnxtToO " was filnxtToOS, dropped S to enable search match index
@@ -12,6 +11,10 @@ set hidden " enable hidden buffers in background
 set list " show hidden characters
 set listchars=tab:>\ ,trail:-,nbsp:+,extends:>,precedes:<
 set updatetime=750
+
+" show cursorline on focus
+au VimEnter,WinEnter,BufWinEnter,FocusGained,CmdwinEnter * setlocal cursorline
+au WinLeave,FocusLost,CmdwinLeave * setlocal nocursorline
 
 " enable 256 color support inside tmux
 set background=dark
