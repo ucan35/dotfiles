@@ -3,7 +3,7 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-PS1='[\u@\h \W]\$ '
+PS1='[\u@\h \W]\n\$ '
 
 # Check the window size after each command and, if necessary,
 # Update the values of LINES and COLUMNS.
