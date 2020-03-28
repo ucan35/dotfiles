@@ -30,10 +30,10 @@ ScrollingOnOutput=FALSE
 ScrollingOnKeystroke=FALSE
 ScrollingBar=TERMINAL_SCROLLBAR_NONE
 FontName=Source Code Pro 10
-BackgroundMode=TERMINAL_BACKGROUND_TRANSPARENT
 BackgroundDarkness=0.900000
 TitleMode=TERMINAL_TITLE_HIDE
 ShortcutsNoHelpkey=TRUE
 ShortcutsNoMenukey=TRUE
 ShortcutsNoMnemonics=TRUE
+BackgroundImageStyle=TERMINAL_BACKGROUND_STYLE_CENTERED
 
