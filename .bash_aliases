@@ -1,5 +1,5 @@
 # common
-alias ll='ls -lv --color=auto'
+alias ll='ls -lvrt --color=auto'
 alias grep='grep --color=auto'
 alias diff='diff --color=auto'
 alias cd..='cd ..'
@@ -7,6 +7,7 @@ alias ..='cd ..'
 alias go_temp='cd $(mktemp -d)'
 alias sc='sudo systemctl'
 alias vim='nvim -b' # launch neovim in binary mode in order to make CR appear as ^M
+alias vimdiff='nvim -b -R -d' # launch neovim in binary mode in order to make CR appear as ^M
 alias ssh='TERM=xterm ssh'
 alias rg='rg --no-heading'
 
