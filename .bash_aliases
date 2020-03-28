@@ -19,3 +19,13 @@ l () {
     command light -S "$1";
   fi
 }
+
+tmux-record-toggle() {
+  if [ -n "$TMUX" ]; then
+    ofile=`date +%H%M-%d%m%y.tlog`
+    tmux pipe-pane -o "cat >> $ofile"
+    tmux display-message "Screen record toggled"
+  else
+    return 1
+  fi
+}
