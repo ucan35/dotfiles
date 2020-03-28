@@ -71,3 +71,6 @@ let g:gutentags_modules = ['gtags_cscope']
 let g:gutentags_project_root = ['.git']
 let g:gutentags_cache_dir = expand('~/.cache/tags')
 let g:gutentags_plus_switch = 1
+
+" https://github.com/neoclide/coc.nvim
+packadd coc.nvim

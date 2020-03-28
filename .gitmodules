@@ -37,3 +37,6 @@
 [submodule ".config/nvim/pack/plugin/opt/gutentags_plus"]
 	path = .config/nvim/pack/plugin/opt/gutentags_plus
 	url = https://github.com/skywind3000/gutentags_plus
+[submodule "/home/can/.config/nvim/pack/plugin/opt/coc.nvim"]
+	path = /home/can/.config/nvim/pack/plugin/opt/coc.nvim
+	url = https://github.com/neoclide/coc.nvim.git
