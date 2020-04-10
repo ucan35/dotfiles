@@ -25,4 +25,6 @@ source /usr/share/fzf/completion.bash
 export GTAGSCONF=/usr/share/gtags/gtags.conf
 export GTAGSLABEL=pygments
 
-[[ -f ~/.bash_aliases ]] && . ~/.bash_aliases
+export HISTFILE=~/.cache/bash/bash_history
+
+[[ -f ~/.config/bash/bash_aliases ]] && . ~/.config/bash/bash_aliases
