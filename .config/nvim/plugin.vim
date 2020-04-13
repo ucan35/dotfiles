@@ -49,6 +49,7 @@ let g:matchup_matchparen_timeout = 50
 " https://github.com/scrooloose/nerdtree
 packadd nerdtree
 nnoremap <silent> <F3> :NERDTreeToggle<CR>
+let g:NERDTreeBookmarksFile = expand('~/.cache/NERDTreeBookmarks')
 
 " https://github.com/junegunn/fzf.vim
 packadd fzf.vim

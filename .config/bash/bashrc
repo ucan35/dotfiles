@@ -25,6 +25,12 @@ source /usr/share/fzf/completion.bash
 export GTAGSCONF=/usr/share/gtags/gtags.conf
 export GTAGSLABEL=pygments
 
-export HISTFILE=~/.cache/bash/bash_history
+export XDG_CONFIG_HOME=~/.config
+export XDG_CACHE_HOME=~/.cache
+export XDG_DATA_HOME=~/.local/share
 
-[[ -f ~/.config/bash/bash_aliases ]] && . ~/.config/bash/bash_aliases
+# https://wiki.archlinux.org/index.php/XDG_Base_Directory
+export HISTFILE="$XDG_CACHE_HOME"/bash/bash_history
+export LESSHISTFILE="$XDG_CACHE_HOME"/less/lesshst
+
+[[ -f "$XDG_CONFIG_HOME"/bash/bash_aliases ]] && . "$XDG_CONFIG_HOME"/bash/bash_aliases
