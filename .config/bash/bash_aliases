@@ -29,3 +29,12 @@ tmux-record-toggle() {
     return 1
   fi
 }
+
+# network namespace, switch under specified one
+netns() {
+  if [ -z "$1" ]; then
+    ip netns
+  else
+    sudo -E ip netns exec "$1" sudo -E -u "$USER" /bin/bash -l
+  fi
+}
