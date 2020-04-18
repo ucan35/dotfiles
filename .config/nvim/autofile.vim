@@ -8,3 +8,8 @@ autocmd! FileType make call MakefileOpts()
 function! MakefileOpts()
     syntax sync minlines=512
 endfunction
+
+autocmd! FileType c call COpts()
+function! COpts()
+    hi! link Function NONE
+endfunction
