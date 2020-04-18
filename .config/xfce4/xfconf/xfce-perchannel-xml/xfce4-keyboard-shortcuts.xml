@@ -36,9 +36,9 @@
       <property name="&lt;Primary&gt;Escape" type="string" value="xfce4-appfinder">
         <property name="startup-notify" type="bool" value="true"/>
       </property>
-      <property name="&lt;Super&gt;9" type="string" value="pactl set-sink-volume 0 -5%"/>
-      <property name="&lt;Super&gt;0" type="string" value="pactl set-sink-volume 0 +5%"/>
-      <property name="&lt;Super&gt;minus" type="string" value="pactl set-sink-mute 0 toggle"/>
+      <property name="&lt;Super&gt;9" type="string" value="pactl set-sink-volume @DEFAULT_SINK@ -5%"/>
+      <property name="&lt;Super&gt;0" type="string" value="pactl set-sink-volume @DEFAULT_SINK@ +5%"/>
+      <property name="&lt;Super&gt;minus" type="string" value="pactl set-sink-mute @DEFAULT_SINK@ toggle"/>
       <property name="&lt;Super&gt;e" type="string" value="thunar"/>
     </property>
   </property>
