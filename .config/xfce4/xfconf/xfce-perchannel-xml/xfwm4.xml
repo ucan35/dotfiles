@@ -57,7 +57,7 @@
     <property name="snap_to_border" type="bool" value="true"/>
     <property name="snap_to_windows" type="bool" value="false"/>
     <property name="snap_width" type="int" value="15"/>
-    <property name="vblank_mode" type="string" value="auto"/>
+    <property name="vblank_mode" type="string" value="glx"/>
     <property name="theme" type="string" value="Default"/>
     <property name="tile_on_move" type="bool" value="false"/>
     <property name="title_alignment" type="string" value="center"/>
