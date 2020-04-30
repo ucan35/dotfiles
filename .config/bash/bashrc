@@ -3,14 +3,14 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-PS1='[\u@\h \W]\n\$ '
+PS1="[\$?] [\A] [\u@\h \W]\n\$ "
 
 # Check the window size after each command and, if necessary,
 # Update the values of LINES and COLUMNS.
 shopt -s checkwinsize
 
 # bash history configurations
-HISTSIZE=-1
+HISTSIZE=99999
 HISTFILESIZE=-1
 HISTCONTROL=ignoredups
 
