@@ -3,7 +3,12 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-PS1="[\$?] [\A] [\u@\h \W]\n\$ "
+function GIT_BRANCH {
+    local git_branch
+    git_branch=$(git rev-parse --abbrev-ref HEAD 2>/dev/null)
+    [ -n "$git_branch" ] && echo "($git_branch)" || true
+}
+PS1='[$?] [\A] [\u@\h \W] $(GIT_BRANCH)\n\$ '
 
 # Check the window size after each command and, if necessary,
 # Update the values of LINES and COLUMNS.
