@@ -22,8 +22,8 @@ HISTCONTROL=ignoredups
 export EDITOR=nvim
 
 # enable fzf keybindings, https://github.com/junegunn/fzf
-source /usr/share/fzf/key-bindings.bash
-source /usr/share/fzf/completion.bash
+source /usr/share/doc/fzf/examples/key-bindings.bash
+source /usr/share/doc/fzf/examples/completion.bash
 
 # gnu global with pygments (and universal-ctags), https://www.gnu.org/software/global/, http://pygments.org/
 # https://github.com/universal-ctags/ctags
