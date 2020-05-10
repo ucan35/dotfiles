@@ -53,6 +53,7 @@ let g:NERDTreeBookmarksFile = expand('~/.cache/NERDTreeBookmarks')
 
 " https://github.com/junegunn/fzf.vim
 packadd fzf.vim
+set rtp+=/usr/share/doc/fzf/examples/ " load fzf.vim from fzf package
 nnoremap <silent> <C-p> :GFiles<CR>
 let g:fzf_layout = { 'down': '25%' }
 
