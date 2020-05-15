@@ -43,3 +43,6 @@
 [submodule ".config/nvim/pack/plugin/opt/tagbar"]
 	path = .config/nvim/pack/plugin/opt/tagbar
 	url = https://github.com/majutsushi/tagbar
+[submodule ".config/nvim/pack/plugin/opt/vim-bitbake"]
+	path = .config/nvim/pack/plugin/opt/vim-bitbake
+	url = https://github.com/kergoth/vim-bitbake
