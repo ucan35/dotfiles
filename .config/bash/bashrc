@@ -8,7 +8,15 @@ function GIT_BRANCH {
     git_branch=$(git rev-parse --abbrev-ref HEAD 2>/dev/null)
     [ -n "$git_branch" ] && echo "($git_branch)" || true
 }
-PS1='[$?] [\A] [\u@\h \W] $(GIT_BRANCH)\n\$ '
+
+function NETNS_NAME {
+    local netns_name
+    # Predefined passwordless permission for `sudo ip netns identify` command.
+    netns_name=$(sudo ip netns identify)
+    [ -n "$netns_name" ] && echo "@$netns_name " || true
+}
+
+PS1='[$?] [\A] [\u@\h $(NETNS_NAME)\W] $(GIT_BRANCH)\n\$ '
 
 # Check the window size after each command and, if necessary,
 # Update the values of LINES and COLUMNS.
