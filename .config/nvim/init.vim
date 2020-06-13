@@ -11,6 +11,8 @@ set hidden " enable hidden buffers in background
 set list " show hidden characters
 set listchars=tab:>\ ,trail:-,nbsp:+,extends:>,precedes:<
 set updatetime=750
+set diffopt+=algorithm:patience
+set diffopt+=indent-heuristic
 
 " show cursorline on focus
 au VimEnter,WinEnter,BufWinEnter,FocusGained,CmdwinEnter * setlocal cursorline
