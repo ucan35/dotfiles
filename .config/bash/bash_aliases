@@ -10,6 +10,7 @@ alias vim='nvim -b' # launch neovim in binary mode in order to make CR appear as
 alias vimdiff='nvim -b -R -d' # launch neovim in binary mode in order to make CR appear as ^M
 alias ssh='TERM=xterm ssh'
 alias rg='rg --no-heading'
+alias clear='clear -x' # dont clear scrollback
 
 # https://github.com/haikarainen/light
 l () {
