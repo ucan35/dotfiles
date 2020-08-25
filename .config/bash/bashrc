@@ -28,7 +28,7 @@ source /usr/share/doc/fzf/examples/completion.bash
 
 # gnu global with pygments (and universal-ctags), https://www.gnu.org/software/global/, http://pygments.org/
 # https://github.com/universal-ctags/ctags
-export GTAGSCONF=/usr/share/gtags/gtags.conf
+export GTAGSCONF=/etc/gtags/gtags.conf
 export GTAGSLABEL=pygments
 
 export XDG_CONFIG_HOME=~/.config
