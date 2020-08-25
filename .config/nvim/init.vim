@@ -13,6 +13,7 @@ set listchars=tab:>\ ,trail:-,nbsp:+,extends:>,precedes:<
 set updatetime=750
 set diffopt+=algorithm:patience
 set diffopt+=indent-heuristic
+set colorcolumn=90
 
 " show cursorline on focus
 au VimEnter,WinEnter,BufWinEnter,FocusGained,CmdwinEnter * setlocal cursorline
