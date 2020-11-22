@@ -39,3 +39,38 @@ netns() {
     sudo -E ip netns exec "$1" sudo -E -u "$USER" /bin/bash -l
   fi
 }
+
+# Useful environment variables.
+## vblank_mode=0
+## DRI_PRIME=1
+## RADV_PERFTEST=aco
+## VK_ICD_FILENAMES=/usr/share/vulkan/icd.d/radeon_icd.x86_64.json
+## mesa_glthread=true
+## MESA_NO_ERROR=1
+## __GL_THREADED_OPTIMIZATIONS=1
+# This is dota2 specific.
+## -high -novid -console -disablehangwatchdog -gl
+# Make sure swap does not kick in with swapoff.
+perf_mode() {
+  local gpu_dpm="balanced"
+  local cpu_gov="ondemand"
+  local cpu_bias="6"
+
+  if [ -z "$1" -o "$1" -eq "1" ]; then
+    :
+  elif [ "$1" -eq "0" ]; then
+    gpu_dpm="performance"
+    cpu_gov="performance"
+    cpu_bias="0"
+  elif [ "$1" -eq "2" ]; then
+    gpu_dpm="battery"
+    cpu_gov="ondemand"
+    cpu_bias="15"
+  fi
+
+  sudo bash -c "\
+    echo $gpu_dpm > '/sys/class/drm/card1/device/power_dpm_state' && \
+    echo $cpu_gov | tee /sys/devices/system/cpu/cpu{0,1,2,3}/cpufreq/scaling_governor && \
+    echo $cpu_bias | tee /sys/devices/system/cpu/cpu{0,1,2,3}/power/energy_perf_bias \
+  "
+}
