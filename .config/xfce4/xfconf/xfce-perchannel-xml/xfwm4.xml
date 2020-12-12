@@ -6,7 +6,7 @@
     <property name="borderless_maximize" type="bool" value="true"/>
     <property name="box_move" type="bool" value="false"/>
     <property name="box_resize" type="bool" value="false"/>
-    <property name="button_layout" type="string" value="|HMC"/>
+    <property name="button_layout" type="string" value="O|SHMC"/>
     <property name="button_offset" type="int" value="0"/>
     <property name="button_spacing" type="int" value="0"/>
     <property name="click_to_focus" type="bool" value="true"/>
@@ -39,7 +39,7 @@
     <property name="prevent_focus_stealing" type="bool" value="false"/>
     <property name="raise_delay" type="int" value="250"/>
     <property name="raise_on_click" type="bool" value="true"/>
-    <property name="raise_on_focus" type="bool" value="true"/>
+    <property name="raise_on_focus" type="bool" value="false"/>
     <property name="raise_with_any_button" type="bool" value="false"/>
     <property name="repeat_urgent_blink" type="bool" value="true"/>
     <property name="resize_opacity" type="int" value="100"/>
@@ -52,11 +52,13 @@
     <property name="show_app_icon" type="bool" value="false"/>
     <property name="show_dock_shadow" type="bool" value="true"/>
     <property name="show_frame_shadow" type="bool" value="true"/>
-    <property name="show_popup_shadow" type="bool" value="false"/>
-    <property name="snap_resist" type="bool" value="true"/>
-    <property name="snap_to_border" type="bool" value="true"/>
+    <property name="show_popup_shadow" type="bool" value="true"/>
+    <property name="snap_resist" type="bool" value="false"/>
+    <property name="snap_to_border" type="bool" value="false"/>
     <property name="snap_to_windows" type="bool" value="false"/>
-    <property name="snap_width" type="int" value="15"/>
+    <property name="snap_width" type="int" value="10"/>
+    <!-- xfce may not accept manually changed configurations, use
+         xfconf-query -c xfwm4 -p /general/vblank_mode -s glx. -->
     <property name="vblank_mode" type="string" value="glx"/>
     <property name="theme" type="string" value="Default"/>
     <property name="tile_on_move" type="bool" value="false"/>
@@ -76,7 +78,7 @@
     <property name="wrap_cycle" type="bool" value="false"/>
     <property name="wrap_layout" type="bool" value="false"/>
     <property name="wrap_resistance" type="int" value="10"/>
-    <property name="wrap_windows" type="bool" value="true"/>
+    <property name="wrap_windows" type="bool" value="false"/>
     <property name="wrap_workspaces" type="bool" value="false"/>
     <property name="zoom_desktop" type="bool" value="true"/>
     <property name="workspace_names" type="array">
@@ -85,6 +87,5 @@
       <value type="string" value="Workspace 3"/>
       <value type="string" value="Workspace 4"/>
     </property>
-    <property name="margin_top" type="int" value="0"/>
   </property>
 </channel>
