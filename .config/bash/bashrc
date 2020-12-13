@@ -16,7 +16,7 @@ PS1='[$?] [\A] [\u@\h \W] $(GIT_BRANCH)\n\$ '
 shopt -s checkwinsize
 
 # bash history configurations
-HISTSIZE=99999
+HISTSIZE=999999
 HISTFILESIZE=-1
 HISTCONTROL=ignoredups
 
