@@ -53,7 +53,7 @@ netns() {
 # Make sure swap does not kick in with swapoff.
 perf_mode() {
   local gpu_dpm="balanced"
-  local cpu_gov="ondemand"
+  local cpu_gov="schedutil"
   local cpu_bias="6"
 
   if [ -z "$1" ] || [ "$1" -eq "1" ]; then
@@ -64,7 +64,6 @@ perf_mode() {
     cpu_bias="0"
   elif [ "$1" -eq "2" ]; then
     gpu_dpm="battery"
-    cpu_gov="ondemand"
     cpu_bias="15"
   fi
 
