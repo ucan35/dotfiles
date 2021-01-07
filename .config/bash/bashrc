@@ -29,6 +29,9 @@ source /usr/share/doc/fzf/examples/completion.bash
 # gnu global with pygments (and universal-ctags), https://www.gnu.org/software/global/, http://pygments.org/
 # https://github.com/universal-ctags/ctags
 export GTAGSCONF=/etc/gtags/gtags.conf
+# Note that below env variable makes gtags to use `pygments-parser` section for its
+# configuration. There is `ctagscom` field set to `/usr/bin/ctags-exuberant`.
+# Change it into `/usr/bin/ctags-universal` if you want to combine pygments with u-ctags.
 export GTAGSLABEL=pygments
 
 export XDG_CONFIG_HOME=~/.config
