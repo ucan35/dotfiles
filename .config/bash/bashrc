@@ -22,6 +22,16 @@ HISTCONTROL=ignoredups
 
 export EDITOR=nvim
 
+# these variables are need to be exported before sourcing below scripts
+export XDG_CONFIG_HOME=~/.config
+export XDG_CACHE_HOME=~/.cache
+export XDG_DATA_HOME=~/.local/share
+
+# https://wiki.archlinux.org/index.php/XDG_Base_Directory
+export HISTFILE="$XDG_CACHE_HOME"/bash/bash_history
+export LESSHISTFILE="$XDG_CACHE_HOME"/less/lesshst
+export INPUTRC="$XDG_CONFIG_HOME"/readline/inputrc
+
 # enable fzf keybindings, https://github.com/junegunn/fzf
 source /usr/share/doc/fzf/examples/key-bindings.bash
 source /usr/share/doc/fzf/examples/completion.bash
@@ -33,13 +43,5 @@ export GTAGSCONF=/etc/gtags/gtags.conf
 # configuration. There is `ctagscom` field set to `/usr/bin/ctags-exuberant`.
 # Change it into `/usr/bin/ctags-universal` if you want to combine pygments with u-ctags.
 export GTAGSLABEL=pygments
-
-export XDG_CONFIG_HOME=~/.config
-export XDG_CACHE_HOME=~/.cache
-export XDG_DATA_HOME=~/.local/share
-
-# https://wiki.archlinux.org/index.php/XDG_Base_Directory
-export HISTFILE="$XDG_CACHE_HOME"/bash/bash_history
-export LESSHISTFILE="$XDG_CACHE_HOME"/less/lesshst
 
 [[ -f "$XDG_CONFIG_HOME"/bash/bash_aliases ]] && . "$XDG_CONFIG_HOME"/bash/bash_aliases
