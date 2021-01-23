@@ -1,0 +1,4 @@
+# TODO in bash_logout script check if the history file exceeds N number of lines,
+# if so, rather than truncating it, compress (and sort -u ?) and move it to somewhere
+# as backup. As a seconds step, the history lookup mechanism could be modified to
+# include backup files to extend searching on these too.
