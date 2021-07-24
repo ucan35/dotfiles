@@ -1,12 +1,10 @@
 [Desktop Entry]
-Encoding=UTF-8
-Name=Mozilla Firefox
-GenericName=Web Browser
-Comment=Browse the Web
-Exec=env MOZ_WEBRENDER=1 MOZ_X11_EGL=1 firefox
-Icon=/opt/firefox/browser/chrome/icons/default/default128.png
+Name=Firefox
+Comment=Web Browser
+Exec=env MOZ_WEBRENDER=1 MOZ_DISABLE_RDD_SANDBOX=1 MOZ_X11_EGL=1 /opt/firefox/firefox %u
 Terminal=false
 Type=Application
-Categories=Application;Network;WebBrowser;
-MimeType=text/html;text/xml;application/xhtml+xml;application/vnd.mozilla.xul+xml;text/mml;
-StartupNotify=True
+Icon=/opt/firefox/browser/chrome/icons/default/default128.png
+Categories=Network;WebBrowser;
+MimeType=text/html;text/xml;application/xhtml+xml;application/xml;application/vnd.mozilla.xul+xml;application/rss+xml;application/rdf+xml;image/gif;image/jpeg;image/png;x-scheme-handler/http;x-scheme-handler/https;
+StartupNotify=true

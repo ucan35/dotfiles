@@ -1,0 +1,34 @@
+# XDG settings.
+# These variables are need to be exported before sourcing below scripts.
+export XDG_CONFIG_HOME=~/.config
+export XDG_CACHE_HOME=~/.cache
+export XDG_DATA_HOME=~/.local/share
+
+# https://wiki.archlinux.org/index.php/XDG_Base_Directory
+export HISTFILE="$XDG_CACHE_HOME"/shell/history
+export LESSHISTFILE="$XDG_CACHE_HOME"/less/lesshst
+export INPUTRC="$XDG_CONFIG_HOME"/readline/inputrc
+
+export EDITOR=nvim
+
+# Enable fzf keybindings, https://github.com/junegunn/fzf.
+. /usr/share/doc/fzf/examples/key-bindings.bash
+. /usr/share/doc/fzf/examples/completion.bash
+
+# gnu global with pygments (and universal-ctags), https://www.gnu.org/software/global/, http://pygments.org/
+# https://github.com/universal-ctags/ctags
+#export GTAGSCONF=/etc/gtags/gtags.conf
+# Note that below env variable makes gtags to use `pygments-parser` section for its
+# configuration. There is `ctagscom` field set to `/usr/bin/ctags-exuberant`.
+# Change it into `/usr/bin/ctags-universal` if you want to combine pygments with u-ctags.
+#export GTAGSLABEL=pygments
+
+# History configurations.
+HISTSIZE=999999
+HISTFILESIZE=-1
+HISTCONTROL=ignoredups
+
+. "$XDG_CONFIG_HOME"/shell/aliases
+if true; then
+    . "$XDG_CONFIG_HOME"/shell/include-laptop/aliases
+fi

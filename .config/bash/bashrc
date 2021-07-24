@@ -1,9 +1,7 @@
-# ~/.bashrc
-
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-function GIT_BRANCH {
+GIT_BRANCH() {
     local git_branch
     git_branch=$(git rev-parse --abbrev-ref HEAD 2>/dev/null)
     [ -n "$git_branch" ] && echo "($git_branch)" || true
@@ -15,33 +13,6 @@ PS1='[$?] [\A] [\u@\h \W] $(GIT_BRANCH)\n\$ '
 # Update the values of LINES and COLUMNS.
 shopt -s checkwinsize
 
-# bash history configurations
-HISTSIZE=999999
-HISTFILESIZE=-1
-HISTCONTROL=ignoredups
-
-export EDITOR=nvim
-
-# these variables are need to be exported before sourcing below scripts
-export XDG_CONFIG_HOME=~/.config
-export XDG_CACHE_HOME=~/.cache
-export XDG_DATA_HOME=~/.local/share
-
-# https://wiki.archlinux.org/index.php/XDG_Base_Directory
-export HISTFILE="$XDG_CACHE_HOME"/bash/bash_history
-export LESSHISTFILE="$XDG_CACHE_HOME"/less/lesshst
-export INPUTRC="$XDG_CONFIG_HOME"/readline/inputrc
-
-# enable fzf keybindings, https://github.com/junegunn/fzf
-source /usr/share/doc/fzf/examples/key-bindings.bash
-source /usr/share/doc/fzf/examples/completion.bash
-
-# gnu global with pygments (and universal-ctags), https://www.gnu.org/software/global/, http://pygments.org/
-# https://github.com/universal-ctags/ctags
-export GTAGSCONF=/etc/gtags/gtags.conf
-# Note that below env variable makes gtags to use `pygments-parser` section for its
-# configuration. There is `ctagscom` field set to `/usr/bin/ctags-exuberant`.
-# Change it into `/usr/bin/ctags-universal` if you want to combine pygments with u-ctags.
-export GTAGSLABEL=pygments
-
-[[ -f "$XDG_CONFIG_HOME"/bash/bash_aliases ]] && . "$XDG_CONFIG_HOME"/bash/bash_aliases
+if [ -f "$HOME"/.config/shell/init ]; then
+    . "$HOME"/.config/shell/init
+fi

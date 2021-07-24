@@ -1,1 +1,0 @@
-c-syntax.vim/c.vim

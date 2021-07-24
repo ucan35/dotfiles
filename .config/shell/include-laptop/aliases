@@ -1,0 +1,59 @@
+# light, change backlight
+# depends on: xfce4-power-management, bc, policykit-1
+l() {
+    local mb="$(< /sys/class/backlight/intel_backlight/max_brightness)"
+    local cb="$(< /sys/class/backlight/intel_backlight/brightness)"
+    if [ "$1" -ge 0 ] 2>/dev/null; then
+        local nb=$(bc <<< "$1*($mb/100)")
+	# Could have used /sys/class/backlight/intel_backlight/brightness but that would require adm privileges.
+	# Since xfce4-power-management has polkit-1 policy, use that without need of password prompt.
+        command pkexec /usr/sbin/xfpm-power-backlight-helper --set-brightness "$nb"
+    else
+        command bc <<< "scale=3; ($cb/$mb)*100"
+    fi
+}
+
+# performance mode
+# depends on: amdgpu, sudo, coreutils
+## Useful environment variables for performance.
+### vblank_mode=0
+### DRI_PRIME=1
+### RADV_PERFTEST=aco
+### VK_ICD_FILENAMES=/usr/share/vulkan/icd.d/radeon_icd.x86_64.json
+### mesa_glthread=true
+### MESA_NO_ERROR=1
+### __GL_THREADED_OPTIMIZATIONS=1
+#### This is dota2 specific.
+##### -high -novid -console -disablehangwatchdog -gl
+perf_mode() {
+    local gpu_dpm="balanced"
+    local cpu_gov="schedutil"
+    local cpu_bias=6
+
+    if [ "$1" -eq 0 ] 2>/dev/null; then
+        gpu_dpm="performance"
+	cpu_gov="performance"
+	cpu_bias=0
+    elif [ "$1" -eq 2 ] 2>/dev/null; then
+        gpu_dpm="battery"
+	cpu_bias=15
+    elif [ "$1" != "1" ]; then
+        command cat /sys/class/drm/card1/device/power_dpm_state
+        command cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
+        command cat /sys/devices/system/cpu/cpu0/power/energy_perf_bias
+	return 0
+    fi
+
+    command sudo \
+    	gpu_dpm="$gpu_dpm" \
+	cpu_gov="$cpu_gov" \
+	cpu_bias="$cpu_bias" \
+    	sh -c '\
+    	echo "$gpu_dpm" > /sys/class/drm/card1/device/power_dpm_state; \
+    	i=0; \
+    	while [ "$i" -lt 4 ]; do \
+    	    echo "$cpu_gov" > /sys/devices/system/cpu/cpu"$i"/cpufreq/scaling_governor; \
+    	    echo "$cpu_bias" > /sys/devices/system/cpu/cpu"$i"/power/energy_perf_bias; \
+    	    i=$((i+1)); \
+    	done'
+}

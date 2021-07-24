@@ -1,0 +1,22 @@
+alias ll='ls -lv --color=auto'
+alias grep='grep --color=auto'
+alias diff='diff --color=auto'
+alias cd..='cd ..'
+alias ..='cd ..'
+alias go_temp='cd $(mktemp -d)'
+alias sc='sudo systemctl'
+alias vim='nvim -b' # launch neovim in binary mode in order to make CR appear as ^M
+alias vimdiff='nvim -b -R -d' # launch neovim in binary mode in order to make CR appear as ^M
+alias ssh='TERM=xterm ssh'
+alias rg='rg --no-heading'
+alias clear='clear -x' # dont clear scrollback
+
+# network namespace, switch under specified one
+# depends on: iproute2, sudo
+netns() {
+    if [ -z "$1" ]; then
+        command ip netns
+    else
+        command sudo -E ip netns exec "$1" sudo -E -u "$USER" /bin/bash -l
+    fi
+}

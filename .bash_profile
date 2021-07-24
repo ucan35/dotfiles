@@ -1,3 +1,3 @@
-# ~/.bash_profile
-
-[[ -f ~/.config/bash/bashrc ]] && . ~/.config/bash/bashrc
+if [ -f ~/.config/bash/bashrc ]; then
+    . ~/.config/bash/bashrc
+fi

@@ -1,5 +1,0 @@
-[Desktop Entry]
-Type=Application
-Name=xfce4-notifyd
-Exec=/usr/lib/x86_64-linux-gnu/xfce4/notifyd/xfce4-notifyd
-X-GNOME-Autostart-enabled=true
